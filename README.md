@@ -12,7 +12,7 @@ Local businesses and donors invest directly in student success.
 
 This document is a Product Requirements–style README focused on clarity and alignment, scoped tightly to an MVP.
 
-⸻
+
 
 Problem Statement
 
@@ -33,7 +33,7 @@ At the same time:
 Core problem:
 There is no trusted, scalable way to reward academic effort in the moment.
 
-⸻
+
 
 Target Users
 
@@ -45,14 +45,14 @@ Secondary Users
 	•	Community sponsors (local businesses, donors)
 	•	Parents / guardians (indirect stakeholders)
 
-⸻
+
 
 User Context & Constraints
 	•	Students need motivation that feels fair, achievable, and real
 	•	Schools require low administrative overhead
 	•	Sponsors want verified impact, not self-reported claims
 
-⸻
+
 
 Product Goals & Success Criteria
 
@@ -67,7 +67,7 @@ Success Looks Like
 	•	Sponsors return to fund additional reward pools
 	•	No verified fraud or abuse during pilot
 
-⸻
+
 
 Current Alternatives & Gaps
 
@@ -81,7 +81,7 @@ Why These Fall Short
 	•	Recognition is delayed and symbolic
 	•	No transparent, scalable system exists
 
-⸻
+
 
 Proposed Solution (High-Level)
 
@@ -91,14 +91,14 @@ GoldStar provides a platform where:
 	•	Funding comes from community sponsors
 	•	Students redeem rewards immediately
 
-⸻
+
 
 Value Proposition
 	•	Students: Academic effort finally feels worth it now
 	•	Schools: Trusted validation without paying
 	•	Sponsors: Visible, verified community impact
 
-⸻
+
 
 MVP Scope & Functional Requirements
 
@@ -129,7 +129,7 @@ Sponsor Experience
 	•	Students rewarded
 	•	Total funds distributed
 
-⸻
+
 
 Explicitly Out of Scope (MVP)
 	•	Leaderboards or public rankings
@@ -139,7 +139,7 @@ Explicitly Out of Scope (MVP)
 	•	Automatic grade syncing
 (manual verification only for MVP)
 
-⸻
+
 
 Core User Flow (MVP)
 	1.	Student signs up
@@ -148,7 +148,7 @@ Core User Flow (MVP)
 	4.	System assigns reward tier
 	5.	Student redeems reward
 
-⸻
+
 
 Risks & Considerations
 	•	Equity concerns (absolute performance vs improvement)
@@ -157,7 +157,7 @@ Risks & Considerations
 	•	Preventing fraud without complex systems
 	•	Ensuring rewards support learning, not distract from it
 
-⸻
+
 
 Metrics for MVP Validation
 	•	% of students who submit grades more than once
@@ -166,7 +166,7 @@ Metrics for MVP Validation
 	•	Verification turnaround time
 	•	Fraud or dispute incidents (target: zero)
 
-⸻
+
 
 MVP Philosophy
 
