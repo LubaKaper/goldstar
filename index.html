@@ -1,0 +1,575 @@
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoldStar — Hard Work Pays Off</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Satoshi:wght@300;400;500;700&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer=""></script>
+
+  <!-- Main JS -->
+  <script src="main.js" defer=""></script>
+</head>
+
+<body class="" style="">
+  <!-- Cursor -->
+  <div class="cursor" style="left: 293px; top: 207px;"></div>
+  <div class="cursor-follower" style="left: 293px; top: 207px;"></div>
+
+  <!-- Loader -->
+  <div class="loader loaded">
+    <div class="loader__content">
+      <div class="loader__star">★</div>
+      <div class="loader__text">GOLDSTAR</div>
+      <div class="loader__bar">
+        <div class="loader__progress" style="width: 100%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled">
+    <a href="#" class="nav__logo">
+      <span class="nav__logo-star">★</span>
+      <span class="nav__logo-text">GOLDSTAR</span>
+    </a>
+    <div class="nav__center">
+      <a href="#how-it-works" class="nav__link">Process</a>
+      <a href="#wall" class="nav__link">Recognition</a>
+      <a href="#rewards" class="nav__link">Rewards</a>
+      <a href="#about" class="nav__link">Story</a>
+    </div>
+    <a href="#donate" class="nav__cta">
+      <span>Support Students</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M1 13L13 1M13 1H1M13 1V13" stroke="currentColor" stroke-width="2"></path>
+      </svg>
+    </a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__grain"></div>
+      <div class="hero__gradient"></div>
+      <div class="hero__stars">
+        <span class="floating-star"
+          style="--delay: 0s; --x: 10%; --y: 20%; translate: none; rotate: none; scale: none; transform: translate3d(0px, -29.7505px, 0px);">★</span>
+        <span class="floating-star"
+          style="--delay: 1s; --x: 85%; --y: 15%; translate: none; rotate: none; scale: none; transform: translate3d(0px, -29.7505px, 0px);">★</span>
+        <span class="floating-star"
+          style="--delay: 2s; --x: 70%; --y: 70%; translate: none; rotate: none; scale: none; transform: translate3d(0px, -29.7505px, 0px);">★</span>
+        <span class="floating-star"
+          style="--delay: 0.5s; --x: 20%; --y: 80%; translate: none; rotate: none; scale: none; transform: translate3d(0px, -29.7505px, 0px);">★</span>
+        <span class="floating-star"
+          style="--delay: 1.5s; --x: 90%; --y: 60%; translate: none; rotate: none; scale: none; transform: translate3d(0px, -29.7505px, 0px);">★</span>
+      </div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__label"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <span class="hero__label-line"></span>
+        <span>Community-Powered Recognition</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line">
+          <span class="hero__title-word"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">GOLD</span>
+        </span>
+        <span class="hero__title-line">
+          <span class="hero__title-word hero__title-word--accent"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">STAR</span>
+        </span>
+      </h1>
+
+      <p class="hero__tagline"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <span class="hero__tagline-em">Hard work</span> pays off.
+      </p>
+
+      <div class="hero__ctas"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <a href="#submit" class="btn btn--primary"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+          <span class="btn__text">Submit Your Grades</span>
+          <span class="btn__icon">→</span>
+        </a>
+        <a href="#donate" class="btn btn--ghost"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+          <span class="btn__text">Support the Movement</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__stats">
+      <div class="stat" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="stat__value">
+          <span class="stat__number" data-value="2847">2,847</span>
+        </div>
+        <div class="stat__label">Students Recognized</div>
+      </div>
+      <div class="stat" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="stat__value">
+          <span class="stat__prefix">$</span>
+          <span class="stat__number" data-value="124">124</span>
+          <span class="stat__suffix">K</span>
+        </div>
+        <div class="stat__label">Rewards Distributed</div>
+      </div>
+      <div class="stat" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="stat__value">
+          <span class="stat__number" data-value="48">48</span>
+        </div>
+        <div class="stat__label">States Reached</div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" style="opacity: 1;">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section process" id="how-it-works">
+    <div class="process__header">
+      <span class="section__eyebrow"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">The
+        Process</span>
+      <h2 class="section__title"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Three steps
+        to<br><em>recognition</em></h2>
+    </div>
+
+    <div class="process__steps">
+      <div class="step" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="step__number">
+          <span>01</span>
+        </div>
+        <div class="step__content">
+          <h3>Submit</h3>
+          <p>Upload your report card and provide your school's contact information for verification.</p>
+        </div>
+        <div class="step__visual">
+          <div class="step__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 16V4M12 4L8 8M12 4L16 8M4 14V18C4 19.1 4.9 20 6 20H18C19.1 20 20 19.1 20 18V14"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="step" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="step__number">
+          <span>02</span>
+        </div>
+        <div class="step__content">
+          <h3>Verify</h3>
+          <p>Your teacher or school official confirms your grades with a simple email approval.</p>
+        </div>
+        <div class="step__visual">
+          <div class="step__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="step" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="step__number">
+          <span>03</span>
+        </div>
+        <div class="step__content">
+          <h3>Celebrate</h3>
+          <p>Join the Wall of Recognition and receive your reward based on your achievement tier.</p>
+        </div>
+        <div class="step__visual">
+          <div class="step__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="process__connector">
+      <svg class="connector-line" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <path d="M0,5 L100,5" stroke="currentColor" stroke-width="1" stroke-dasharray="4,4"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Recognition Wall -->
+  <section class="section wall" id="wall">
+    <div class="wall__header">
+      <span class="section__eyebrow"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Recognition
+        Wall</span>
+      <h2 class="section__title"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Celebrating
+        students who<br><em>put in the work</em></h2>
+    </div>
+
+    <div class="wall__marquee">
+      <div class="marquee__track">
+        <div class="marquee__content">
+          <span class="marquee__item">★ GOLD STAR ACHIEVER</span>
+          <span class="marquee__item">★ HARD WORK PAYS OFF</span>
+          <span class="marquee__item">★ EXCELLENCE RECOGNIZED</span>
+          <span class="marquee__item">★ COMMUNITY POWERED</span>
+        </div>
+        <div class="marquee__content" aria-hidden="true">
+          <span class="marquee__item">★ GOLD STAR ACHIEVER</span>
+          <span class="marquee__item">★ HARD WORK PAYS OFF</span>
+          <span class="marquee__item">★ EXCELLENCE RECOGNIZED</span>
+          <span class="marquee__item">★ COMMUNITY POWERED</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wall__grid">
+      <article class="card card--gold"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="card__badge">
+          <span class="card__tier">GOLD</span>
+          <span class="card__medal">★</span>
+        </div>
+        <div class="card__content">
+          <h3 class="card__name">Maya Thompson</h3>
+          <p class="card__meta">8th Grade · California</p>
+          <div class="card__grade">
+            <span class="card__grade-value">99.2</span>
+            <span class="card__grade-label">Average</span>
+          </div>
+        </div>
+        <div class="card__shine"></div>
+      </article>
+
+      <article class="card card--gold"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="card__badge">
+          <span class="card__tier">GOLD</span>
+          <span class="card__medal">★</span>
+        </div>
+        <div class="card__content">
+          <h3 class="card__name">Russell Valdez</h3>
+          <p class="card__meta">7th Grade · New York</p>
+          <div class="card__grade">
+            <span class="card__grade-value">98.5</span>
+            <span class="card__grade-label">Average</span>
+          </div>
+        </div>
+        <div class="card__shine"></div>
+      </article>
+
+      <article class="card card--silver"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="card__badge">
+          <span class="card__tier">SILVER</span>
+          <span class="card__medal">★</span>
+        </div>
+        <div class="card__content">
+          <h3 class="card__name">Jordan Kim</h3>
+          <p class="card__meta">10th Grade · Texas</p>
+          <div class="card__grade">
+            <span class="card__grade-value">94.1</span>
+            <span class="card__grade-label">Average</span>
+          </div>
+        </div>
+        <div class="card__shine"></div>
+      </article>
+
+      <article class="card card--silver"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="card__badge">
+          <span class="card__tier">SILVER</span>
+          <span class="card__medal">★</span>
+        </div>
+        <div class="card__content">
+          <h3 class="card__name">Aisha Martinez</h3>
+          <p class="card__meta">5th Grade · Georgia</p>
+          <div class="card__grade">
+            <span class="card__grade-value">92.8</span>
+            <span class="card__grade-label">Average</span>
+          </div>
+        </div>
+        <div class="card__shine"></div>
+      </article>
+
+      <article class="card card--bronze"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="card__badge">
+          <span class="card__tier">BRONZE</span>
+          <span class="card__medal">★</span>
+        </div>
+        <div class="card__content">
+          <h3 class="card__name">Carlos Rodriguez</h3>
+          <p class="card__meta">11th Grade · Florida</p>
+          <div class="card__grade">
+            <span class="card__grade-value">87.3</span>
+            <span class="card__grade-label">Average</span>
+          </div>
+        </div>
+        <div class="card__shine"></div>
+      </article>
+
+      <article class="card card--gold"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="card__badge">
+          <span class="card__tier">GOLD</span>
+          <span class="card__medal">★</span>
+        </div>
+        <div class="card__content">
+          <h3 class="card__name">Emily Washington</h3>
+          <p class="card__meta">9th Grade · Virginia</p>
+          <div class="card__grade">
+            <span class="card__grade-value">99.8</span>
+            <span class="card__grade-label">Average</span>
+          </div>
+        </div>
+        <div class="card__shine"></div>
+      </article>
+    </div>
+
+    <div class="wall__cta"
+      style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <a href="#submit" class="btn btn--primary btn--large"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+        <span class="btn__text">Join the Wall</span>
+        <span class="btn__icon">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Reward Tiers -->
+  <section class="section tiers" id="rewards">
+    <div class="tiers__header">
+      <span class="section__eyebrow"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Reward
+        Tiers</span>
+      <h2 class="section__title"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Every
+        achievement<br><em>deserves recognition</em></h2>
+    </div>
+
+    <div class="tiers__grid">
+      <div class="tier tier--gold"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="tier__glow"></div>
+        <div class="tier__header">
+          <span class="tier__star">★</span>
+          <h3 class="tier__name">Gold Star</h3>
+        </div>
+        <div class="tier__range">98 — 100 Average</div>
+        <div class="tier__reward">
+          <span class="tier__amount">$100</span>
+          <span class="tier__type">gift card</span>
+        </div>
+        <ul class="tier__perks">
+          <li>Featured on Recognition Wall</li>
+          <li>Certificate of Excellence</li>
+          <li>Priority processing</li>
+        </ul>
+      </div>
+
+      <div class="tier tier--silver"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="tier__header">
+          <span class="tier__star">★</span>
+          <h3 class="tier__name">Silver Star</h3>
+        </div>
+        <div class="tier__range">90 — 97 Average</div>
+        <div class="tier__reward">
+          <span class="tier__amount">$50</span>
+          <span class="tier__type">gift card</span>
+        </div>
+        <ul class="tier__perks">
+          <li>Listed on Recognition Wall</li>
+          <li>Certificate of Achievement</li>
+        </ul>
+      </div>
+
+      <div class="tier tier--bronze"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="tier__header">
+          <span class="tier__star">★</span>
+          <h3 class="tier__name">Bronze Star</h3>
+        </div>
+        <div class="tier__range">80 — 89 Average</div>
+        <div class="tier__reward">
+          <span class="tier__amount">$25</span>
+          <span class="tier__type">gift card</span>
+        </div>
+        <ul class="tier__perks">
+          <li>Listed on Recognition Wall</li>
+          <li>Certificate of Merit</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate Section -->
+  <section class="section donate" id="donate">
+    <div class="donate__bg">
+      <div class="donate__pattern"></div>
+    </div>
+
+    <div class="donate__content">
+      <span class="section__eyebrow section__eyebrow--light"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Support the
+        Movement</span>
+      <h2 class="section__title section__title--light"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Fuel
+        the<br><em>future</em></h2>
+      <p class="donate__subtitle"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Your donation
+        directly rewards students for their hard work.</p>
+
+      <div class="donate__selector"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <button class="donate__option" data-amount="25">
+          <span class="donate__option-amount">$25</span>
+          <span class="donate__option-impact">1 Bronze Star</span>
+        </button>
+        <button class="donate__option donate__option--active" data-amount="50">
+          <span class="donate__option-amount">$50</span>
+          <span class="donate__option-impact">1 Silver Star</span>
+        </button>
+        <button class="donate__option" data-amount="100">
+          <span class="donate__option-amount">$100</span>
+          <span class="donate__option-impact">1 Gold Star</span>
+        </button>
+        <button class="donate__option" data-amount="250">
+          <span class="donate__option-amount">$250</span>
+          <span class="donate__option-impact">Multiple Students</span>
+        </button>
+      </div>
+
+      <a href="#" class="btn btn--white btn--large"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+        <span class="btn__text">Donate Now</span>
+        <span class="btn__icon">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="section story" id="about">
+    <div class="story__content">
+      <span class="section__eyebrow"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">The Story</span>
+      <h2 class="section__title"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">It started
+        with<br><em>one bodega</em></h2>
+
+      <div class="story__text">
+        <p class="story__lead"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">GoldStar was
+          inspired by a Staten Island bodega manager who started rewarding students for good grades.</p>
+
+        <p style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">What began
+          with one kid and one report card grew into a viral movement that brought families from across the country.</p>
+
+        <blockquote class="story__quote"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+          <p>"If you can help your community the same way I've helped my community, why not?"</p>
+          <cite>— The inspiration behind GoldStar</cite>
+        </blockquote>
+
+        <p style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">We're
+          building on that vision — creating a nationwide platform where communities come together to recognize and
+          reward student achievement.</p>
+
+        <p class="story__tagline"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Because
+          <em>hard work</em> should always pay off.</p>
+      </div>
+    </div>
+
+    <div class="story__visual"
+      style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="story__badge">
+        <span class="story__badge-star">★</span>
+        <span class="story__badge-text">EST. 2024</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="footer__logo-star">★</span>
+          <span class="footer__logo-text">GOLDSTAR</span>
+        </div>
+        <p class="footer__tagline">Hard work pays off.</p>
+      </div>
+
+      <nav class="footer__nav">
+        <div class="footer__col">
+          <h4>Platform</h4>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#wall">Recognition Wall</a>
+          <a href="#rewards">Rewards</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#about">Our Story</a>
+          <a href="#">Press</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <a href="#donate">Donate</a>
+          <a href="#">FAQ</a>
+          <a href="#">Privacy</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2025 GoldStar. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+            </path>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
