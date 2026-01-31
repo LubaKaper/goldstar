@@ -1,2 +1,2 @@
-“# B Notes”
-“- Practicing git workflow”
+# B Notes
+- Practicing git workflow
