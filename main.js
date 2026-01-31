@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initDonateSelector();
   initSmoothScroll();
+  initJupiterPopup();
   initCountUp();
 });
 
@@ -385,6 +386,44 @@ function initSmoothScroll() {
         });
       }
     });
+  });
+}
+
+/* ----------------------------------------
+   JupiterEd Popup (Submit Grades)
+   ---------------------------------------- */
+function initJupiterPopup() {
+  const button = document.querySelector('#submit-grades-btn');
+  const status = document.querySelector('#jupiter-status');
+
+  if (!button || !status) return;
+
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const width = 480;
+    const height = 720;
+    const dualScreenLeft = window.screenX !== undefined ? window.screenX : window.screenLeft;
+    const dualScreenTop = window.screenY !== undefined ? window.screenY : window.screenTop;
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth || screen.width;
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight || screen.height;
+    const left = Math.max(0, dualScreenLeft + (viewportWidth - width) / 2);
+    const top = Math.max(0, dualScreenTop + (viewportHeight - height) / 2);
+
+    const features = `popup=yes,width=${width},height=${height},left=${Math.round(left)},top=${Math.round(top)},noopener,noreferrer`;
+    const popup = window.open('https://login.jupitered.com/login/', 'jupiteredLogin', features);
+
+    status.classList.remove('jupiter-status--error', 'jupiter-status--success');
+
+    if (!popup) {
+      status.textContent = 'Popup blocked. Please allow popups and try again.';
+      status.classList.add('jupiter-status--error');
+      return;
+    }
+
+    status.textContent = 'JupiterEd login opened in a popup window (demo).';
+    status.classList.add('jupiter-status--success');
+    popup.focus?.();
   });
 }
 

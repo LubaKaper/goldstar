@@ -376,6 +376,25 @@ body.cursor-hover .cursor-follower {
 }
 
 /* ----------------------------------------
+   JupiterEd Popup Status
+   ---------------------------------------- */
+.jupiter-status {
+    margin-top: var(--space-sm);
+    min-height: 1.25rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.jupiter-status--success {
+    color: var(--gold-light);
+}
+
+.jupiter-status--error {
+    color: #ff8f8f;
+}
+
+/* ----------------------------------------
    Section Base
    ---------------------------------------- */
 .section {
